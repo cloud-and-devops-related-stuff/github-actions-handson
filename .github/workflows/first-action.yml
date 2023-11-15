@@ -1,0 +1,10 @@
+name: First Workflow
+on: workflow_dispatch
+jobs:
+    first-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Listing Files
+              run: ls
+            - name: Print Bye
+              run: echo "Bye"
