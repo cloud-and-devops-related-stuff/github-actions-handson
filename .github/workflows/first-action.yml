@@ -8,3 +8,14 @@ jobs:
               run: ls -la
             - name: Print Bye
               run: echo "Bye"
+    checkout-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Clone Repository
+              uses: actions/checkout@v4
+              with:
+                ref: main
+            - name: List Files
+              run: ls -la
+            - name: Completion Step
+              run: echo "Execution Completed"
